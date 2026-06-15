@@ -4,7 +4,7 @@ export type AllCaseOutput = {
     original: string,
     asUpperCase: string,
     asLowerCase: string
-} | null;
+};
 
 @Component({
     selector: "app-all-case",
@@ -14,7 +14,7 @@ export type AllCaseOutput = {
 export class AllCase {
     // This is the 'old' way of handling inputs and outputs
     @Input() placeholder = "";
-    @Output() update = new EventEmitter<AllCaseOutput>();
+    @Output() update = new EventEmitter<AllCaseOutput | null>();
 
     // This is the current pattern for handling inputs and outputs
     // placeholder = input("");
