@@ -8,7 +8,8 @@ export type AllCaseOutput = {
 
 @Component({
     selector: "app-all-case",
-    templateUrl: "./all-case.html"
+    templateUrl: "./all-case.html",
+    styleUrl: "./all-case.css"
 })
 export class AllCase {
     // This is the 'old' way of handling inputs and outputs

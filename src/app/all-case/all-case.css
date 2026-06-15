@@ -1,0 +1,20 @@
+:host {
+    display: block;
+    padding: 1.5rem;
+    font-family: sans-serif;
+}
+
+input {
+    font-size: 1.4rem;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    outline-offset: 2px;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: 2px solid #4a90e2;
+}
