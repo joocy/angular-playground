@@ -28,7 +28,8 @@ export class AllCase {
                 asUpperCase: input.toLocaleUpperCase(),
                 asLowerCase: input.toLocaleLowerCase()
             });
+        } else {
+          this.update.emit(null);
         }
-        this.update.emit(null);
     }
 }
