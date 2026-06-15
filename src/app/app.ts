@@ -1,12 +1,22 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { AllCase, AllCaseOutput } from "./all-case/all-case";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [AllCase],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('playground');
+  protected original = "";
+  protected uppercase = "";
+  protected lowercase = "";
+
+  protected onUpdate(result: AllCaseOutput) {
+    if (result !== null) {
+      this.original = result.original;
+      this.uppercase = result.asUpperCase;
+      this.lowercase = result.asLowerCase;
+    }
+  }
 }
