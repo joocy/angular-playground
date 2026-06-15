@@ -27,6 +27,14 @@ export class App {
       // this.original.set(result.original);
       // this.uppercase.set(result.asUpperCase);
       // this.lowercase.set(result.asLowerCase);
+    } else {
+      this.original = "";
+      this.uppercase = "";
+      this.lowercase = "";
+
+      // this.original.set("");
+      // this.uppercase.set("");
+      // this.lowercase.set("");
     }
   }
 }
