@@ -1,4 +1,5 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component } from '@angular/core';
+// import { signal } from '@angular/core';
 import { AllCase, AllCaseOutput } from "./all-case/all-case";
 
 @Component({
@@ -8,7 +9,7 @@ import { AllCase, AllCaseOutput } from "./all-case/all-case";
   styleUrl: './app.css'
 })
 export class App {
-  // This will work if change detection is triggered or manually started 
+  // This will work if change detection is triggered or manually started
   protected original = "";
   protected uppercase = "";
   protected lowercase = "";

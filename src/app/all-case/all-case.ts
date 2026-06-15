@@ -1,4 +1,6 @@
-import { Component, EventEmitter, input, Input, output, Output } from "@angular/core";
+import { Component } from '@angular/core';
+import { EventEmitter, Input, Output } from "@angular/core";
+// import { input, output } from "@angular/core";
 
 export type AllCaseOutput = {
     original: string,
